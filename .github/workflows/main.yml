@@ -1,0 +1,31 @@
+name: Update Atlas CFTC feed
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 */6 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout data feed
+        uses: actions/checkout@v4
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Fetch and validate official CFTC data
+        env:
+          CFTC_RELAY_HMAC_KEY: ${{ secrets.CFTC_RELAY_HMAC_KEY }}
+        run: python publish_cftc_feed.py
+      - name: Publish latest feed
+        run: |
+          git config user.name "Atlas CFTC Relay"
+          git config user.email "actions@users.noreply.github.com"
+          git add latest.json
+          git diff --cached --quiet || git commit -m "Update official CFTC Gold feed"
+          git push
