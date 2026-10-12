@@ -521,12 +521,12 @@
       "report_date_as_yyyy_mm_dd": "2026-10-06T00:00:00.000"
     }
   ],
-  "expires_at_utc": "2026-10-15T05:58:50Z",
+  "expires_at_utc": "2026-10-15T15:26:22Z",
   "payload_sha256": "211148ac21b3641630ae15a79ce3e37a3e4be5c80c71ae93feedb86b6dae4869",
-  "published_at_utc": "2026-10-12T05:58:50Z",
+  "published_at_utc": "2026-10-12T15:26:22Z",
   "purpose": "ATLAS_CFTC_OFFICIAL_RELAY_V1",
   "schema_version": 1,
-  "sequence": 158,
+  "sequence": 159,
   "source_endpoint": "https://publicreporting.cftc.gov/resource/jun7-fc8e.json",
   "source_mode": "PUBLIC_REPORTING_API"
 }
