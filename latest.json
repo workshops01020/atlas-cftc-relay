@@ -571,14 +571,27 @@
       "noncomm_positions_short_all": "41169",
       "open_interest_all": "538190",
       "report_date_as_yyyy_mm_dd": "2026-11-03T00:00:00.000"
+    },
+    {
+      "cftc_contract_market_code": "088691",
+      "comm_positions_long_all": "111396",
+      "comm_positions_short_all": "321747",
+      "contract_market_name": "GOLD",
+      "futonly_or_combined": "Combined",
+      "id": "261110088691C",
+      "market_and_exchange_names": "GOLD - COMMODITY EXCHANGE INC.",
+      "noncomm_positions_long_all": "219577",
+      "noncomm_positions_short_all": "37900",
+      "open_interest_all": "546481",
+      "report_date_as_yyyy_mm_dd": "2026-11-10T00:00:00.000"
     }
   ],
-  "expires_at_utc": "2026-11-19T06:30:10Z",
-  "payload_sha256": "52ef64605bb1b56164638a71dd22eb039017bb5bd478ab7867c1747c98a49118",
-  "published_at_utc": "2026-11-16T06:30:10Z",
+  "expires_at_utc": "2026-11-19T22:01:35Z",
+  "payload_sha256": "8d3b2c6188f781b2ca87ac1c46d67f4f78bbd81b63dfd7ffc03b1c072e4cc562",
+  "published_at_utc": "2026-11-16T22:01:35Z",
   "purpose": "ATLAS_CFTC_OFFICIAL_RELAY_V1",
   "schema_version": 1,
-  "sequence": 264,
+  "sequence": 265,
   "source_endpoint": "https://publicreporting.cftc.gov/resource/jun7-fc8e.json",
   "source_mode": "PUBLIC_REPORTING_API"
 }
